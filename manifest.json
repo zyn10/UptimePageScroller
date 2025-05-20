@@ -1,0 +1,17 @@
+{
+    "manifest_version": 3,
+    "name": "uptime Scroller",
+    "version": "1.0",
+    "description": "Auto-scrolls the monitor-list section back and forth.",
+    "content_scripts": [
+        {
+            "matches": [
+                "", # paste the url here of the page you want to run the script on and delete this comment too
+            ],
+            "js": [
+                "content.js"
+            ],
+            "run_at": "document_idle"
+        }
+    ]
+}
